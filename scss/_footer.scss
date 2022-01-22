@@ -1,0 +1,36 @@
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: $color-light-grey;
+  padding-top: rem(20px);
+  padding-bottom: rem(17px);
+}
+
+.footer__container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__info{
+  display: flex;
+  flex-direction: column;
+  gap: rem(7px);
+
+  a{
+    text-decoration: none;
+    font: normal normal 300 rem(26px) Raleway;
+  }
+
+  span{
+    font: normal normal normal rem(11px) Open Sans;
+    color: $color-grey;
+  }
+
+}
+
+.footer__icons{
+  display: flex;
+  align-items: center;
+  gap:  rem(20px);
+}

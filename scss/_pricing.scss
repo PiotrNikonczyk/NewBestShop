@@ -1,0 +1,241 @@
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: rem(1266px);
+
+  margin-top: rem(100px);
+  margin-bottom: rem(197px);
+
+
+  h2 {
+
+    font: normal normal normal rem(36px) Raleway;
+    margin-bottom: rem(71px);
+  }
+
+  .pricing__boxes {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+  }
+
+
+}
+
+.pricing__box {
+
+  border-radius: 18px;
+  padding-top: rem(34px);
+  padding-bottom: rem(61px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: rem(372px);
+  position: relative;
+
+  .pricing__details {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: rem(121px);
+    margin-bottom: rem(50px);
+
+
+    .pricing__type {
+      font: normal normal bold rem(20px) Raleway;
+      color: $color-pricing-type;
+      margin-bottom: rem(14px);
+
+    }
+
+    .pricing__price {
+      font: normal normal 300 rem(46px) Open Sans;
+      margin-bottom: rem(5px);
+    }
+
+    .pricing__limited {
+      font: normal normal bold rem(12px) Raleway;
+    }
+
+  }
+
+  .pricing__items {
+    font: normal normal normal rem(14px) Open Sans;
+    text-align: center;
+
+    li {
+      display: flex;
+      gap: rem(10px);
+      align-items: center;
+      margin-bottom: rem(20px);
+    }
+  }
+
+  .btn {
+    padding: rem(16px) rem(57px);
+    border-radius: rem(23px);
+    position: absolute;
+    bottom: 0;
+    transform: translate(0, 50%);
+    text-decoration: none;
+    font: normal normal bold rem(13px) Open Sans;
+    color: $color-white;
+  }
+
+}
+
+.pricing__box--basic {
+  border: 1px solid $color-redish;
+
+  .pricing__price {
+    color: $color-redish;
+  }
+
+  .btn {
+    background-color: $color-redish;
+  }
+
+
+  li {
+    @for $i from 1 through 5 {
+
+      @if ($i < 4) {
+        &:nth-child(#{$i}) {
+          &::before {
+            content: "";
+            width: rem(11px);
+            height: rem(11px);
+            display: block;
+            background-image: url(../assets/Ckechmark-1.svg);
+
+          }
+        }
+      } @else {
+        &:nth-child(#{$i}) {
+          &::before {
+            content: "";
+            width: rem(11px);
+            height: rem(11px);
+            display: block;
+            background-image: url(../assets/Close.svg);
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.pricing__box--professional {
+
+  transform: scale(calc(500 / 461));
+
+  box-shadow: 5px 10px 27px $color-primary-shadow;
+
+  border: 1px solid $color-pricing-box-professional;
+
+  .pricing__price {
+    color: $color-pricing-box-professional;
+  }
+
+  .btn {
+    background-color: $color-pricing-box-professional;
+    box-shadow: 5px 10px 14px $color-primary-shadow;
+  }
+
+  li {
+    @for $i from 1 through 5 {
+
+      @if ($i < 5) {
+        &:nth-child(#{$i}) {
+          &::before {
+            content: "";
+            width: rem(11px);
+            height: rem(11px);
+            display: block;
+            background-image: url(../assets/Ckechmark-1.svg);
+
+          }
+        }
+      } @else {
+        &:nth-child(#{$i}) {
+          &::before {
+            content: "";
+            width: rem(11px);
+            height: rem(11px);
+            display: block;
+            background-image: url(../assets/Close.svg);
+
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+
+.pricing__box--premium {
+  border: 1px solid $color-green;
+
+  .pricing__price {
+    color: $color-green;
+  }
+
+  .btn {
+    background-color: $color-green;
+  }
+
+  li {
+    @for $i from 1 through 5 {
+
+      @if ($i < 6) {
+        &:nth-child(#{$i}) {
+          &::before {
+            content: "";
+            width: rem(11px);
+            height: rem(11px);
+            display: block;
+            background-image: url(../assets/Ckechmark-1.svg);
+
+          }
+        }
+      } @else {
+        &:nth-child(#{$i}) {
+          &::before {
+            content: "";
+            width: rem(11px);
+            height: rem(11px);
+            display: block;
+            background-image: url(../assets/Close.svg);
+
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

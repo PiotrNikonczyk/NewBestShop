@@ -1,0 +1,16 @@
+@import "resetcss";
+@import "functions";
+@import "variables";
+@import "header";
+@import "openingsection";
+@import "statistic";
+@import "benefits";
+@import "pricing";
+@import "contact";
+@import "footer";
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

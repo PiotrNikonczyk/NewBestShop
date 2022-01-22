@@ -1,0 +1,6 @@
+@use "sass:math";
+
+@function rem($size, $base : 16px) {  // funkcja zamiany px na rem
+  $remSize: math.div($size, $base); //zamiast / do dzielenia zaleca sie już math.div
+  @return #{$remSize}rem;
+}

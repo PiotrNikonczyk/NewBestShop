@@ -1,0 +1,39 @@
+@import "functions";
+
+.openingsection {
+
+  padding-top: rem(130px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font: normal normal normal rem(49px) Raleway;
+  }
+
+  p {
+    font: normal normal normal rem(16px)/rem(22px) Open Sans;
+    margin-top: rem(20px);
+    margin-bottom: rem(38px);
+  }
+
+  a {
+    font: normal normal bold rem(16px)/rem(22px) Open Sans;
+    text-decoration: none;
+    color: $color-white;
+
+    padding: rem(22px) rem(157px);
+
+    background: $color-primary 0 0 no-repeat padding-box;
+    box-shadow: rem(5px) rem(10px) rem(14px) $color-primary-shadow;
+    border-radius: rem(40px);
+
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+

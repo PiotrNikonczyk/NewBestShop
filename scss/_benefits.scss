@@ -1,0 +1,177 @@
+@import "variables";
+
+.benefits {
+  background-color: $color-light-grey;
+  display: flex;
+  justify-content: center;
+  padding-top: rem(105px);
+  width: 100%;
+}
+
+.benefits__container {
+  width: rem(1124px);
+
+}
+
+.benefits__single_container {
+  display: flex;
+  background-color: #FFFFFF;
+  border: 1px solid #E8E9ED;
+  border-radius: 5px;
+  margin-top: rem(37px);
+
+  h2 {
+    text-align: left;
+    font: normal normal normal 36px/42px Raleway;
+    margin-bottom: rem(30px);
+  }
+
+  p {
+    text-align: left;
+    font: normal normal normal 16px/22px Open Sans;
+  }
+
+}
+
+.benefits__notebook {
+  position: relative;
+
+  .benefit_text {
+    margin-top: rem(91px);
+    margin-left: rem(36px);
+    margin-bottom: rem(50px);
+    width: rem(416px);
+  }
+
+  img {
+    width: rem(386px);
+    height: auto;
+    margin: rem(113px) rem(0px) rem(38px) rem(169px);
+    position: relative;
+    z-index: 2;
+
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: rem(180px);
+    height: rem(180px);
+    background-color: $color-redish;
+
+    border-radius: 40px;
+    position: absolute;
+    left: rem(830px);
+    top: rem(70px);
+    transform: rotate(45deg);
+    z-index: 1;
+  }
+
+  .benefit_text {
+
+    &::after {
+      content: "";
+      display: block;
+      width: rem(332px);
+      height: rem(4px);
+      background-color: $color-redish;
+      margin-top: rem(50px);
+
+    }
+  }
+
+}
+
+.benefits__iphone {
+  //display: none;
+  flex-direction: row-reverse;
+  position: relative;
+
+  .benefit_image {
+
+    padding: rem(29px) rem(0px) rem(13px) rem(70px);
+    z-index: 2;
+
+    img {
+      width: rem(426px);
+      height: rem(328px);
+
+    }
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: rem(320px);
+    height: rem(320px);
+    background-color: $color-primary;
+
+    border-radius: 50%;
+    position: absolute;
+    left: rem(70px);
+    top: rem(12px);
+    transform: rotate(45deg);
+    z-index: 1;
+  }
+
+  .benefit_text {
+    width: 416px;
+    height: 230px;
+    margin: rem(69px) rem(20px) rem(71px) rem(192px);
+  }
+
+
+}
+
+.benefits__double_container {
+  display: flex;
+  position: relative;
+  gap: rem(61px);
+  margin-bottom: rem(105px);
+
+
+  .benefits__single_container {
+    padding: rem(69px) rem(34px) rem(71px) rem(35px);
+  }
+
+  .benefit_text {
+
+    h2 {
+      width: 384px;
+      font: normal normal normal rem(36px)/rem(42px) Raleway;
+    }
+
+    p {
+      width: rem(553px);
+      font: normal normal normal rem(16px)/rem(22px) Open Sans;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: rem(332px);
+      height: rem(4px);
+      background-color: $color-green;
+      margin-top: rem(50px);
+
+    }
+
+  }
+
+  .benefit_image{
+    margin-top: rem(37px);
+    width: rem(440px);
+
+    background-color: $color-green;
+    padding: rem(98px) rem(82px) rem(64px) rem(62px);
+
+    img{
+      width: rem(295px);
+      height: auto;
+
+    }
+
+
+  }
+
+}
