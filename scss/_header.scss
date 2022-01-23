@@ -25,6 +25,20 @@
   color: $primaryColor;
 }
 
+.hambox{
+
+  display: flex;
+  flex-direction: column;
+  gap: rem(5px);
+
+  .hamburger{
+    display: none;
+    width: rem(30px);
+    height: rem(5px);
+    background-color: $color-primary;
+  }
+}
+
 .navList {
   display: flex;
   gap: rem(80px);

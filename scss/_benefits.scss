@@ -43,28 +43,33 @@
     width: rem(416px);
   }
 
-  img {
-    width: rem(386px);
-    height: auto;
-    margin: rem(113px) rem(0px) rem(38px) rem(169px);
+  .benefit_image {
+
     position: relative;
-    z-index: 2;
 
-  }
+    img {
+      width: rem(386px);
+      height: auto;
+      margin: rem(113px) rem(0px) rem(38px) rem(169px);
+      position: relative;
+      z-index: 2;
 
-  &::before {
-    content: "";
-    display: block;
-    width: rem(180px);
-    height: rem(180px);
-    background-color: $color-redish;
+    }
 
-    border-radius: 40px;
-    position: absolute;
-    left: rem(830px);
-    top: rem(70px);
-    transform: rotate(45deg);
-    z-index: 1;
+
+    &::before {
+      content: "";
+      width: rem(180px);
+      height: rem(180px);
+      background-color: $color-redish;
+
+      border-radius: 40px;
+      position: absolute;
+      left: rem(380px);
+      top: rem(70px);
+      transform: rotate(45deg);
+      z-index: 1;
+    }
   }
 
   .benefit_text {
@@ -95,24 +100,28 @@
     img {
       width: rem(426px);
       height: rem(328px);
+      z-index: 33;
+      position: relative;
 
     }
+    &::before {
+      content: "";
+      display: block;
+      width: rem(320px);
+      height: rem(320px);
+      background-color: $color-primary;
+
+      border-radius: 50%;
+      position: absolute;
+      left: rem(70px);
+      top: rem(12px);
+      transform: rotate(45deg);
+      z-index: 1;
+    }
+
   }
 
-  &::before {
-    content: "";
-    display: block;
-    width: rem(320px);
-    height: rem(320px);
-    background-color: $color-primary;
 
-    border-radius: 50%;
-    position: absolute;
-    left: rem(70px);
-    top: rem(12px);
-    transform: rotate(45deg);
-    z-index: 1;
-  }
 
   .benefit_text {
     width: 416px;
@@ -163,11 +172,14 @@
     width: rem(440px);
 
     background-color: $color-green;
-    padding: rem(98px) rem(82px) rem(64px) rem(62px);
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    padding: rem(98px) rem(81px) rem(64px) rem(61px);
 
     img{
       width: rem(295px);
       height: auto;
+
 
     }
 

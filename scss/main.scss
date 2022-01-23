@@ -8,9 +8,22 @@
 @import "pricing";
 @import "contact";
 @import "footer";
+@import "media";
 
 main{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+//@MEDIA TEST BACKGROUND OVERFLOW
+
+
+//
+//*{
+//  background-color: #FB3B64;
+//}
+//
+//main *{
+//  background-color: gold;
+//}
